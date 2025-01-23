@@ -19,7 +19,7 @@ HotWax Commerce OMS provides two methods for adding or updating data in bulk:
 3. On the **EXIM** page, retailers can click the link they want.
 4. Inside the **MDM**, on the top-left corner, retailers can upload a CSV file and download a sample CSV file.
 
-## Import/Export Generally Used in Initial Setup
+## Import/Export Used in Initial Setup
 
 ## Import/Export Facilities
 
@@ -30,6 +30,10 @@ To import a Facilities CSV, go to the **EXIM** page under the **Imports** tab in
 When importing facilities, some fields need to be filled mandatorily, while others can be filled for further reference. Here is the list of mandatory fields:
 
 <table><thead><tr><th width="82">S.No.</th><th width="139">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>facility-id</td><td>Unique identifier for the facility.</td></tr><tr><td>2</td><td>external-id</td><td>External identifier for the facility.</td></tr><tr><td>3</td><td>facility-name</td><td>The name of the facility.</td></tr><tr><td>4</td><td>address-line-1</td><td>Primary address line of the facility.</td></tr><tr><td>5</td><td>address-line-2</td><td>Secondary address line of the facility, if applicable.</td></tr><tr><td>6</td><td>City</td><td>The city where the facility is located.</td></tr><tr><td>7</td><td>zip-code</td><td>Zip or postal code of the facility's location.</td></tr><tr><td>8</td><td>state</td><td>State or province of the facility's location.</td></tr><tr><td>9</td><td>country</td><td>Country where the facility is located.</td></tr><tr><td>10</td><td>latitude</td><td>Latitude coordinate of the facility's location.</td></tr><tr><td>11</td><td>longitude</td><td>Longitude coordinate of the facility's location.</td></tr><tr><td>12</td><td>phone-number</td><td>Phone number for contacting the facility.</td></tr><tr><td>13</td><td>email</td><td>Contact email address for the facility.</td></tr></tbody></table>
+
+{% file src="../.gitbook/assets/import_export_facilities.csv" %}
+Sample CSV File
+{% endfile %}
 
 ***
 
@@ -43,6 +47,10 @@ When importing Employee data, some fields need to be filled mandatorily, while o
 
 <table><thead><tr><th width="109">S.No.</th><th width="148">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>party-id</td><td>Unique identifier for the party (individual or organization).</td></tr><tr><td>2</td><td>external-id</td><td>External system reference ID for integration purposes.</td></tr><tr><td>3</td><td>first-name</td><td>First name of the party.</td></tr><tr><td>4</td><td>last-name</td><td>Last name of the party.</td></tr><tr><td>5</td><td>enabled</td><td>Indicates if the account is active (true/false).</td></tr><tr><td>6</td><td>relationship-status</td><td>Current status of the party’s relationship (e.g., active, inactive).</td></tr><tr><td>7</td><td>user-login-id</td><td>Login ID for the user.</td></tr><tr><td>8</td><td>password</td><td>Password for user authentication.</td></tr><tr><td>9</td><td>party-classifications</td><td>Classifications assigned to the party (e.g., customer, supplier).</td></tr><tr><td>10</td><td>party-identifications</td><td>Identifications or IDs associated with the party.</td></tr><tr><td>11</td><td>relationships</td><td>Relationships linked to the party (e.g., parent-child relationships).</td></tr></tbody></table>
 
+
+
+***
+
 ## Import Calendar
 
 HotWax Commerce provides two convenient options for managing the facility calendar: through the **Facilities App** or via the **Calendar MDM**. Retailers can import a generic calendar based on the store's operating hours. Later, it can be linked to the facility using the **Import Store Calendar Assoc** under the **Imports** tab in the MDM section.
@@ -50,6 +58,14 @@ HotWax Commerce provides two convenient options for managing the facility calend
 To import a Calendar CSV, go to the **EXIM** page under the **Imports** tab in the **MDM** section and click on **Calendar MDM**. When importing a calendar, some fields need to be filled mandatorily. Here is the list:
 
 <table><thead><tr><th width="113">S.No.</th><th width="171">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>calendar-id</td><td>A unique identifier for the calendar used to manage facility schedules.</td></tr><tr><td>2</td><td>description</td><td>A brief description of the calendar or its purpose.</td></tr><tr><td>3</td><td>monday-start</td><td>The start time for operations on Monday.</td></tr><tr><td>4</td><td>monday-capacity</td><td>The maximum capacity or limit for operations on Monday.</td></tr><tr><td>5</td><td>tuesday-start</td><td>The start time for operations on Tuesday.</td></tr><tr><td>6</td><td>tuesday-capacity</td><td>The maximum capacity or limit for operations on Tuesday.</td></tr><tr><td>7</td><td>wednesday-start</td><td>The start time for operations on Wednesday.</td></tr><tr><td>8</td><td>wednesday-capacity</td><td>The maximum capacity or limit for operations on Wednesday.</td></tr><tr><td>9</td><td>thursday-start</td><td>The start time for operations on Thursday.</td></tr><tr><td>10</td><td>thursday-capacity</td><td>The maximum capacity or limit for operations on Thursday.</td></tr><tr><td>11</td><td>friday-start</td><td>The start time for operations on Friday.</td></tr><tr><td>12</td><td>friday-capacity</td><td>The maximum capacity or limit for operations on Friday.</td></tr><tr><td>13</td><td>saturday-start</td><td>The start time for operations on Saturday.</td></tr><tr><td>14</td><td>saturday-capacity</td><td>The maximum capacity or limit for operations on Saturday.</td></tr><tr><td>15</td><td>sunday-start</td><td>The start time for operations on Sunday.</td></tr><tr><td>16</td><td>sunday-capacity</td><td>The maximum capacity or limit for operations on Sunday.</td></tr></tbody></table>
+
+
+
+{% file src="../.gitbook/assets/import_calendar.csv" %}
+Sample CSV file
+{% endfile %}
+
+***
 
 ## Import Store Calendar Assoc
 
@@ -64,6 +80,12 @@ When importing the CSV, some fields need to be filled mandatorily. Here is the l
 
 <table><thead><tr><th width="81">S.No.</th><th>Field Name</th><th width="544">Description</th></tr></thead><tbody><tr><td>1</td><td>store-id</td><td>Unique identifier for the store.</td></tr><tr><td>2</td><td>calendar-id</td><td>Unique identifier for the calendar associated with the store.</td></tr><tr><td>3</td><td>from-date</td><td>Start date for the calendar's validity period.</td></tr><tr><td>4</td><td>thru-date</td><td>End date for the calendar's validity period.</td></tr></tbody></table>
 
+{% file src="../.gitbook/assets/import_store_calendar_assoc.csv" %}
+Sample CSV file
+{% endfile %}
+
+***
+
 ## Import Inventory Variances
 
 This import in HotWax allows retailers to update inventory based on the identification type used in external systems. By importing a CSV file into HotWax, inventory adjustments are marked.
@@ -74,6 +96,12 @@ This import records variances based on the given delta and updates both **ATP** 
 
 <table><thead><tr><th width="93">S.No.</th><th width="167">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>facilityId</td><td>Unique identifier for the facility.</td></tr><tr><td>2</td><td>externalFacilityId</td><td>Identifier used for the facility in external systems.</td></tr><tr><td>3</td><td>idType</td><td>Type of identifier being referenced (e.g., product).</td></tr><tr><td>4</td><td>idValue</td><td>Specific value of the referenced identifier.</td></tr><tr><td>5</td><td>availableDelta</td><td>Change in the available quantity for the facility.</td></tr><tr><td>6</td><td>locationSeqId</td><td>Sequence ID of the location within the facility.</td></tr><tr><td>7</td><td>varianceReasonId</td><td>Identifier for the reason behind a variance in inventory or data.</td></tr><tr><td>8</td><td>comments</td><td>Additional remarks or notes related to the record.</td></tr></tbody></table>
 
+{% file src="../.gitbook/assets/import_inventory_variance (1).csv" %}
+Sample CSV file
+{% endfile %}
+
+***
+
 ## Import Future Inventory
 
 This import is used by retailers to schedule restocking for a product at future scheduled date and time, making the inventory available in HotWax Commerce and on Shopify at their preferred times.
@@ -81,6 +109,8 @@ This import is used by retailers to schedule restocking for a product at future 
 When scheduling a restock, certain mandatory fields should be filled. These fields are listed below:
 
 <table><thead><tr><th width="89">S.No.</th><th width="187">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Shopify Product SKU</td><td>Unique ID for a Product in Shopify.</td></tr><tr><td>2</td><td>Restock Quantity</td><td>The quantity of items restocked.</td></tr><tr><td>3</td><td>Schedule</td><td>Allows selecting the time.</td></tr><tr><td>4</td><td>Facility ID</td><td>Unique ID for a facility where restock is scheduled.</td></tr><tr><td>5</td><td>Product Store</td><td>The name of the Product Store.</td></tr><tr><td>6</td><td>Shopify Store</td><td>Name of the Shopify Store on which the inventory will change.</td></tr><tr><td>7</td><td>Restock Name</td><td>Name for the restock.</td></tr></tbody></table>
+
+
 
 ## Reset Inventory by ATP
 
@@ -162,6 +192,12 @@ When exporting the CSV it gives some major fields which are listed here :
 
 <table><thead><tr><th width="87">S. No.</th><th width="193">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>orderId</td><td>Unique identifier for the order.</td></tr><tr><td>2</td><td>orderName</td><td>Name or description of the order.</td></tr><tr><td>3</td><td>orderItemSeqId</td><td>Sequential identifier for the order item.</td></tr><tr><td>4</td><td>productId</td><td>Unique identifier for the product.</td></tr><tr><td>5</td><td>parentProductName</td><td>Name of the parent product associated with the order item.</td></tr><tr><td>6</td><td>productName</td><td>Name of the product in the order.</td></tr><tr><td>7</td><td>internalName</td><td>Internal name of the product within the system.</td></tr><tr><td>8</td><td>quantity</td><td>Quantity of the order item.</td></tr><tr><td>9</td><td>orderItemStatusId</td><td>Status identifier for the order item.</td></tr><tr><td>10</td><td>orderItemStatusDesc</td><td>Description of the order item status.</td></tr></tbody></table>
 
+
+
+{% file src="../.gitbook/assets/export_order.csv" %}
+Sample CSV
+{% endfile %}
+
 ## Import/ Export that are generally used
 
 ## Export Inventory Config
@@ -172,6 +208,14 @@ When exporting CSV fields are in this way:
 
 <table><thead><tr><th width="96">S.No.</th><th width="178">Field</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>product-id</td><td>Unique identifier for each product.</td></tr><tr><td>2</td><td>internal-name</td><td>Internal reference name for the product.</td></tr><tr><td>3</td><td>product-id-value</td><td>Specific value assigned to the product ID for mapping or identification.</td></tr><tr><td>4</td><td>facility-id</td><td>Unique identifier for the facility (e.g., warehouse or store) where the product is managed.</td></tr><tr><td>5</td><td>external-id</td><td>Identifier for the product used in external systems or integrations.</td></tr><tr><td>6</td><td>ATP</td><td>Available to Promise - quantity of product available to fulfill orders.</td></tr><tr><td>7</td><td>minimum-stock</td><td>The minimum required stock level to prevent stockouts.</td></tr><tr><td>8</td><td>inv-group-member</td><td>Specifies the inventory group or category the product belongs to.</td></tr></tbody></table>
 
+
+
+{% file src="../.gitbook/assets/export_inventory_config.csv" %}
+Sample CSV Files
+{% endfile %}
+
+***
+
 ## Import/Export Inbound Shipment
 
 Inbound shipments are used to receive inventory at a facility or warehouse. Majorly inbound shipments are created in the ERP and synced to HotWax Commerce via API, they can also be manually imported using MDM. To import a Shipment CSV file, go to the **EXIM** page, navigate to the **Imports** tab in the **Warehouse** section, and click on **Shipment**.
@@ -180,6 +224,12 @@ In situations where retailers want to verify or edit their upcoming shipments, t
 
 <table><thead><tr><th width="94">S.No.</th><th width="208">Field Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>shipment-id</td><td>Unique identifier for the shipment.</td></tr><tr><td>2</td><td>external-shipment-id</td><td>External identifier for the shipment, often used in third-party systems.</td></tr><tr><td>3</td><td>shipment-type</td><td>Type of shipment (e.g., inbound, outbound, transfer).</td></tr><tr><td>4</td><td>shipment-status</td><td>Current status of the shipment (e.g., pending, in-transit, delivered).</td></tr><tr><td>5</td><td>origin-facility-id</td><td>ID of the facility from which the shipment is originating.</td></tr><tr><td>6</td><td>destination-facility-id</td><td>ID of the facility where the shipment is being delivered.</td></tr><tr><td>7</td><td>product-id</td><td>Unique identifier for the product being shipped.</td></tr><tr><td>8</td><td>id-type</td><td>Type of ID used for identifying the product (e.g., SKU, barcode).</td></tr><tr><td>9</td><td>product-sku</td><td>SKU (Stock Keeping Unit) for the product being shipped.</td></tr><tr><td>10</td><td>quantity</td><td>Quantity of the product being shipped.</td></tr><tr><td>11</td><td>serial-number</td><td>Serial number of the product being shipped, if applicable.</td></tr><tr><td>12</td><td>order-id</td><td>Unique identifier for the order related to the shipment.</td></tr><tr><td>13</td><td>tracking-number</td><td>Unique tracking number assigned to the shipment for tracking its status.</td></tr></tbody></table>
 
+{% file src="../.gitbook/assets/import_export_inbound_shipment.csv" %}
+Sample CSV File
+{% endfile %}
+
+***
+
 ## Import Safety Stock
 
 Retailers can manually apply safety stock at products per location by importing a CSV. To import a Safety Stock CSV file, go to the **EXIM** page, navigate to the **Imports** tab in the **Warehouse** section, and click on **Safety Stock MDM**.
@@ -187,6 +237,12 @@ Retailers can manually apply safety stock at products per location by importing 
 When importing safety stock some fields need to be filled mandatorily, while others can be filled for further references. Here is the list of mandatory fields:
 
 <table><thead><tr><th width="97">S.No.</th><th>Field Name</th><th width="434">Description</th></tr></thead><tbody><tr><td>1</td><td>facility-id</td><td>Unique identifier for the facility within the system.</td></tr><tr><td>2</td><td>facility-external-id</td><td>External identifier used to represent the facility in external systems.</td></tr><tr><td>3</td><td>product-id</td><td>Unique identifier for the product in the system.</td></tr><tr><td>4</td><td>product-sku</td><td>Stock Keeping Unit (SKU) of the product for tracking and inventory management.</td></tr><tr><td>5</td><td>facility-safety-stock</td><td>Quantity of safety stock reserved for walk-in customers at the facility.</td></tr></tbody></table>
+
+{% file src="../.gitbook/assets/import_safety_stock (1).csv" %}
+Sample CSV File
+{% endfile %}
+
+***
 
 ## Import/Export Purchase Order
 
@@ -198,6 +254,12 @@ When importing Purchase Order some fields need to be mandatorily filled, while o
 
 <table><thead><tr><th width="93">S.No.</th><th>Field Name</th><th width="527">Description</th></tr></thead><tbody><tr><td>1</td><td>external-id</td><td>A unique identifier for the record in an external system or database.</td></tr><tr><td>2</td><td>product-store-id</td><td>The unique identifier for the product store where the item is located.</td></tr><tr><td>3</td><td>facility-id</td><td>The identifier for the facility handling the product.</td></tr><tr><td>4</td><td>external-facility-id</td><td>The unique external identifier for the facility in another system.</td></tr><tr><td>5</td><td>product-SKU</td><td>The unique Stock Keeping Unit (SKU) identifier for the product.</td></tr><tr><td>6</td><td>quantity</td><td>The available quantity of the product in stock or expected.</td></tr><tr><td>7</td><td>atp</td><td>The quantity of the product that can be promised for delivery.</td></tr><tr><td>8</td><td>arrival-date</td><td>The expected date when the product will arrive at the facility or store.</td></tr></tbody></table>
 
+{% file src="../.gitbook/assets/import_export_purchase_order.csv" %}
+Sample CSV file
+{% endfile %}
+
+***
+
 ## Import/Export Purchase Order ATP
 
 PO ATP (Purchase Order Available to Promise) refers to the pre-sellable inventory from a purchase order promised for delivery by a vendor and available for pre-orders.
@@ -207,3 +269,9 @@ Retailers may need to update PO ATP when they want to adjust the pre-sellable in
 Similarly, users can export the CSV of PO ATP from the **EXIM** page in the **Procurement** section under the **Exports** tab. When importing PO ATP, some fields need to be filled mandatorily, while others can be filled for further reference. Here is the list of mandatory fields:
 
 <table><thead><tr><th>S.No.</th><th>Field Name</th><th width="523">Description</th></tr></thead><tbody><tr><td>1</td><td>po-id</td><td>The unique identifier for the Purchase Order (PO) within the system.</td></tr><tr><td>2</td><td>po-external-id</td><td>The unique identifier for the Purchase Order in an external system.</td></tr><tr><td>3</td><td>po-item-seq-id</td><td>The sequence identifier for items within the Purchase Order.</td></tr><tr><td>4</td><td>product-id</td><td>The unique identifier for the product in the system.</td></tr><tr><td>5</td><td>product-sku</td><td>The Stock Keeping Unit (SKU) represents the product.</td></tr><tr><td>6</td><td>ATP</td><td>Available-to-Promise quantity for the product based on current inventory data.</td></tr></tbody></table>
+
+
+
+{% file src="../.gitbook/assets/import_export_purchase_order_atp (1).csv" %}
+Sample CSV File
+{% endfile %}
