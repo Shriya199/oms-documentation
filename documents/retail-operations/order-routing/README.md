@@ -28,22 +28,16 @@ Below is a brief overview of the brokering framework, we will understand each co
 
 Order routing is organized into three hierarchical levels:
 
-<div data-full-width="false">
+<div data-full-width="false"><figure><img src="../.gitbook/assets/routingframework.png" alt=""><figcaption><p>Brokering Framework in HotWax Commerce</p></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/routingframework.png" alt=""><figcaption><p>Brokering Framework in HotWax Commerce</p></figcaption></figure>
-
-</div>
-
-* [x] [<mark style="color:orange;">**Brokering Runs**</mark>](brokeringruns.md)
+* [x] [<mark style="color:orange;">**Brokering Runs**</mark>](broken-reference)
 
 A <mark style="color:orange;">**brokering run**</mark> is the highest level of organization in order routing and lets retailers control the routing frequency based on business needs. Each brokering run can have a different frequency, routing different batches of orders to meet varying fulfillment priorities. For example:
 
 * A brokering run scheduled **every 5 minutes** could prioritize high-priority orders, like same-day deliveries for fast routing and fulfillment.
 * For standard delivery orders with medium priority, a separate brokering run can be set to run **every 6 hours,** aligning with less urgent timelines.
 
-<!---->
-
-* [x] [<mark style="color:orange;">**Routing Rules**</mark>](routings.md)
+- [x] [<mark style="color:orange;">**Routing Rules**</mark>](routings.md)
 
 Within each brokering run, there are multiple <mark style="color:orange;">**routings**</mark><mark style="color:orange;">,</mark> <mark style="color:orange;">**or**</mark> <mark style="color:orange;">**“routing rules.”**</mark> Each routing defines a batch of orders by using filters and sorting criteria. For example, in a "High-Priority Run," routings might include:
 

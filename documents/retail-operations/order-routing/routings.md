@@ -14,7 +14,7 @@ If these order batches need routing at the same frequency but require different 
 
 ## Creating and Managing Routing Rules
 
-This section explains how to create order batches in a brokering run using filters and sorting options to match business needs. We’ll demonstrate this by creating two routing rules:c<mark style="color:orange;">**Same-day/Next-day orders**</mark> and <mark style="color:orange;">**Standard orders**</mark> within our previously created <mark style="color:orange;">**Everyday order routing**</mark> [brokering run](brokeringruns.md).
+This section explains how to create order batches in a brokering run using filters and sorting options to match business needs. We’ll demonstrate this by creating two routing rules:c<mark style="color:orange;">**Same-day/Next-day orders**</mark> and <mark style="color:orange;">**Standard orders**</mark> within our previously created <mark style="color:orange;">**Everyday order routing**</mark> [brokering run](broken-reference).
 
 {% hint style="info" %}
 In this example, we’re routing Same-day/Next-day orders and Standard orders at the same frequency. If a business scenario requires these batches to be routed at different frequencies then separate brokering runs should be created.

@@ -2,7 +2,7 @@
 description: >-
   This page explains how retailers use product tags and facility groups in
   HotWax Commerce to manage inventory and order fulfillment across multiple
-  sales channels, including setting up Available-to-Promise
+  sales channels, including setting up Available-to-Pro
 ---
 
 # Concepts
@@ -83,6 +83,6 @@ This configuration ensures that the correct inventory from the appropriate facil
 
 ### Configuration Facility and Network-Level Product Settings
 
-The Configuration Facility is a virtual facility designed to manage product-level threshold  across the network. It is also useful when creating store-pickup and shipping rules, allowing retailers to suppress the fulfillment of certain products from specific channels or locations. Not every product in the catalog should be available for shipping or BOPIS from stores. For example, special product launches or exclusive items may only be sold in-store. Retailers can disable store fulfillment or online inventory for select products from chosen channels and locations, providing granular control. This network-level approach ensures that orders are allocated efficiently and strategically across all relevant sales channels.
+The Configuration Facility is a virtual facility designed to manage product-level threshold across the network. It is also useful when creating store-pickup and shipping rules, allowing retailers to suppress the fulfillment of certain products from specific channels or locations. Not every product in the catalog should be available for shipping or BOPIS from stores. For example, special product launches or exclusive items may only be sold in-store. Retailers can disable store fulfillment or online inventory for select products from chosen channels and locations, providing granular control. This network-level approach ensures that orders are allocated efficiently and strategically across all relevant sales channels.
 
 For more detailed instructions on how to create multiple Channel Facility Groups and Configuration Facilities in HotWax Commerce, please refer to our detailed [user manual](create-channel.md).

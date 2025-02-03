@@ -97,7 +97,6 @@ Once the eligible facilities are filtered, the next step is to set up sorting cr
 
 * **Proximity:** Retailers can sort inventory allocation based on the distance between the customer's shipping address and the facility. This sorting method prioritizes inventory located closer to the customer, helping reduce shipping times and costs, especially for expedited orders or those requiring same-day or next-day delivery.
 * **Facility order limit:** To maintain a balanced workload at facilities, they can also be sorted based on the remaining fulfillment capacity.
-  
 * **Inventory balance:** Orders can be routed to facilities with the highest available stock of the ordered item, prioritizing locations with excess inventory. This strategy promotes efficient stock rotation, reduces the risk of overstocking, and helps prevent stockouts at key locations.
 * **Custom sequence:** Allows full manual override to the sequence at which facilities are attempted. Retailers can set a custom sequence of facilities, defining a specific order in which locations should be considered for order routing. For example, if a retailer wants to prioritize fulfillment from underperforming stores with lower foot traffic, they can create a custom sequence that favors those stores, helping to balance inventory across all locations. Custom sequences can also be useful for managing seasonal inventory or routing orders to specific regions.
 
@@ -216,7 +215,7 @@ Final inventory rule
 {% hint style="warning" %}
 Once you've configured each rule, change its status from **Draft** to **Active** to make it operational. To do this, click on **Draft** and select **Active,** or revert an active rule back to **Draft** if any adjustments are required.
 
-Once all rules are active, and your routing is fully configured, set the [Brokering Run](brokeringruns.md) to **Active** so that orders can be processed as scheduled.
+Once all rules are active, and your routing is fully configured, set the [Brokering Run](broken-reference) to **Active** so that orders can be processed as scheduled.
 {% endhint %}
 
 ### Add Special Handling for Standard Orders

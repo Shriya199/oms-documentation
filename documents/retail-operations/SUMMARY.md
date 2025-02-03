@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Launchpad](../launchpad/README.md)
+* [Launchpad](README.md)
 
 ## Workflow
 
@@ -23,7 +23,6 @@
   * [Inventory](job-workflows/inventory.md)
   * [Products](job-workflows/products.md)
   * [Miscellaneous](job-workflows/miscellaneous.md)
-  
 
 ## Products
 
